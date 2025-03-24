@@ -1,0 +1,23 @@
+2025-03-05 20:58:28,713 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-03-05 20:58:29,060 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /bhadresh-savani/bert-base-uncased-emotion/resolve/main/config.json HTTP/1.1" 200 0
+2025-03-05 20:58:32,597 - tensorflow - WARNING - From C:\Users\Varma Choudam\AppData\Local\Programs\Python\Python39\lib\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+
+2025-03-05 20:58:33,173 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.17:5000
+2025-03-05 20:58:33,175 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-05 20:58:33,178 - werkzeug - INFO -  * Restarting with stat
+2025-03-05 20:58:45,956 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-03-05 20:58:46,215 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /bhadresh-savani/bert-base-uncased-emotion/resolve/main/config.json HTTP/1.1" 200 0
+2025-03-05 20:58:46,482 - werkzeug - WARNING -  * Debugger is active!
+2025-03-05 20:58:46,486 - werkzeug - INFO -  * Debugger PIN: 503-126-300
+2025-03-05 20:58:46,513 - werkzeug - INFO - 192.168.1.17 - - [05/Mar/2025 20:58:46] "GET / HTTP/1.1" 200 -
+2025-03-05 20:58:49,486 - __main__ - INFO - Listening for voice input...
+2025-03-05 20:58:54,288 - __main__ - WARNING - Could not understand the audio.
+2025-03-05 20:58:54,290 - werkzeug - INFO - 192.168.1.17 - - [05/Mar/2025 20:58:54] "[31m[1mPOST /analyze-voice HTTP/1.1[0m" 400 -
+2025-03-05 20:58:59,630 - __main__ - INFO - Listening for voice input...
+2025-03-05 20:59:06,243 - __main__ - INFO - Speech recognized: hello
+2025-03-05 20:59:07,448 - werkzeug - INFO - 192.168.1.17 - - [05/Mar/2025 20:59:07] "POST /analyze-voice HTTP/1.1" 200 -
+2025-03-05 21:01:00,474 - werkzeug - INFO -  * Detected change in 'c:\\Users\\Varma Choudam\\OneDrive\\Desktop\\voice based\\app.py', reloading
+2025-03-05 21:01:01,884 - werkzeug - INFO -  * Restarting with stat

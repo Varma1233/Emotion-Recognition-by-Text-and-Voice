@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emotion-Aware Chatbot</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom emotion colors */
+        .emotion-joy { background-color: #FFF3CD; }
+        .emotion-sadness { background-color: #D1ECF1; }
+        .emotion-anger { background-color: #F8D7DA; }
+        .emotion-fear { background-color: #E2E3E5; }
+        .emotion-love { background-color: #D4EDDA; }
+        .emotion-surprise { background-color: #CFE2FF; }
+        .emotion-neutral { background-color: #E9ECEF; }
+    </style>
+</head>
+<body class="bg-gray-100 min-h-screen">
+    <div class="container mx-auto p-4">
+        <h1 class="text-3xl font-bold text-center mb-6">Emotion-Aware Chatbot</h1>
+        
+        <!-- Emotion Legend -->
+        <div class="mb-6 max-w-2xl mx-auto px-4">
+            <h3 class="text-sm font-semibold text-gray-600 mb-2">Emotion Legend:</h3>
+            <div class="flex flex-wrap gap-2 text-xs">
+                <span class="px-2 py-1 rounded emotion-joy">Joy</span>
+                <span class="px-2 py-1 rounded emotion-sadness">Sadness</span>
+                <span class="px-2 py-1 rounded emotion-anger">Anger</span>
+                <span class="px-2 py-1 rounded emotion-fear">Fear</span>
+                <span class="px-2 py-1 rounded emotion-love">Love</span>
+                <span class="px-2 py-1 rounded emotion-surprise">Surprise</span>
+                <span class="px-2 py-1 rounded emotion-neutral">Neutral</span>
+            </div>
+        </div>
+        
+        <div class="bg-white rounded-lg shadow-lg p-6 max-w-2xl mx-auto">
+            <!-- Status Indicator -->
+            <div id="status-indicator" class="text-sm text-center mb-4 text-gray-500">
+                Connecting to chatbot...
+            </div>
+            
+            <!-- Chat Window -->
+            <div id="chat-window" class="h-96 overflow-y-auto mb-4 border-b border-gray-200 pb-4">
+                <!-- Chat messages will appear here -->
+            </div>
+
+            <!-- Input Area -->
+            <div class="flex gap-2">
+                <input
+                    type="text"
+                    id="user-input"
+                    placeholder="Type your message..."
+                    class="flex-1 p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    disabled
+                />
+                <button
+                    id="send-btn"
+                    class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 disabled:bg-gray-400 disabled:cursor-not-allowed"
+                    disabled
+                >
+                    Send
+                </button>
+            </div>
+
+            <!-- Emotion Feedback -->
+            <div id="emotion-feedback" class="mt-4 text-sm text-gray-600 hidden">
+                <p>Current detected emotion: <span id="current-emotion">neutral</span></p>
+                <div class="mt-1 w-full bg-gray-200 rounded-full h-2">
+                    <div id="confidence-bar" class="bg-blue-600 h-2 rounded-full" style="width: 0%"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // DOM Elements
+        const chatWindow = document.getElementById("chat-window");
+        const userInput = document.getElementById("user-input");
+        const sendBtn = document.getElementById("send-btn");
+        const statusIndicator = document.getElementById("status-indicator");
+        const emotionFeedback = document.getElementById("emotion-feedback");
+        const currentEmotion = document.getElementById("current-emotion");
+        const confidenceBar = document.getElementById("confidence-bar");
+
+        // Backend API URL
+        const API_URL = "http://localhost:5000";
+        
+        // Function to update the connection status
+        function updateStatus(message, isConnected = false) {
+            statusIndicator.textContent = message;
+            userInput.disabled = !isConnected;
+            sendBtn.disabled = !isConnected;
+            
+            if (isConnected) {
+                statusIndicator.classList.remove("text-red-500");
+                statusIndicator.classList.add("text-green-500");
+            } else {
+                statusIndicator.classList.remove("text-green-500");
+                statusIndicator.classList.add("text-red-500");
+            }
+        }
+
+        // Function to add a message to the chat window
+        function addMessage(role, message, emotion = null, confidence = null) {
+            const messageDiv = document.createElement("div");
+            messageDiv.classList.add("mb-4");
+
+            // Add role-specific styling
+            if (role === "user") {
+                messageDiv.innerHTML = `
+                    <div class="flex justify-end">
+                        <div class="bg-blue-500 text-white p-3 rounded-lg max-w-xs md:max-w-md">
+                            ${message}
+                        </div>
+                    </div>
+                `;
+            } else {
+                // Get emotion-specific styling
+                const emotionClass = emotion ? `emotion-${emotion.toLowerCase()}` : "emotion-neutral";
+                
+                messageDiv.innerHTML = `
+                    <div class="flex justify-start">
+                        <div class="${emotionClass} p-3 rounded-lg max-w-xs md:max-w-md text-gray-800">
+                            <p>${message}</p>
+                            ${emotion ? `<p class="text-xs text-gray-600 mt-1">Detected Emotion: ${emotion} ${confidence ? `(${(confidence * 100).toFixed(0)}%)` : ""}</p>` : ""}
+                        </div>
+                    </div>
+                `;
+                
+                // Update emotion feedback
+                if (emotion) {
+                    currentEmotion.textContent = emotion;
+                    if (confidence) {
+                        confidenceBar.style.width = `${confidence * 100}%`;
+                    }
+                    emotionFeedback.classList.remove("hidden");
+                }
+            }
+
+            chatWindow.appendChild(messageDiv);
+            chatWindow.scrollTop = chatWindow.scrollHeight; // Auto-scroll to bottom
+        }
+
+        // Function to send user input to the backend
+        async function sendMessage() {
+            const message = userInput.value.trim();
+            if (!message) return;
+
+            // Add user message to chat window
+            addMessage("user", message);
+
+            // Clear input
+            userInput.value = "";
+            
+            // Disable input while waiting for response
+            userInput.disabled = true;
+            sendBtn.disabled = true;
+            updateStatus("Processing message...", false);
+
+            try {
+                // Send message to backend
+                const response = await fetch(`${API_URL}/chat`, {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                    },
+                    body: JSON.stringify({ message }),
+                });
+
+                const data = await response.json();
+
+                if (data.error) {
+                    throw new Error(data.error);
+                }
+
+                // Add bot response to chat window
+                addMessage("bot", data.response, data.emotion, data.confidence);
+                
+                // Re-enable input
+                updateStatus("Connected", true);
+                userInput.focus();
+            } catch (error) {
+                console.error("Error:", error);
+                addMessage("bot", "Sorry, something went wrong. Please try again.");
+                updateStatus("Connection error. Please check if the server is running.", false);
+            }
+        }
+
+        // Event Listeners
+        sendBtn.addEventListener("click", sendMessage);
+        userInput.addEventListener("keypress", (e) => {
+            if (e.key === "Enter") {
+                sendMessage();
+            }
+        });
+
+        // Initialize chat with welcome message
+        (async () => {
+            updateStatus("Connecting to chatbot...", false);
+            
+            try {
+                const response = await fetch(`${API_URL}/start`);
+                const data = await response.json();
+                addMessage("bot", data.response);
+                updateStatus("Connected", true);
+                userInput.focus();
+            } catch (error) {
+                console.error("Error:", error);
+                addMessage("bot", "Welcome! The server appears to be offline. Please make sure the backend is running.");
+                updateStatus("Failed to connect. Is the server running?", false);
+            }
+        })();
+    </script>
+</body>
+</html>

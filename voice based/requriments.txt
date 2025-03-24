@@ -1,0 +1,11 @@
+flask
+flask-socketio
+flask-cors
+SpeechRecognition
+transformers
+torch
+python-dotenv
+pyaudio
+websockets
+eventlet
+numpy

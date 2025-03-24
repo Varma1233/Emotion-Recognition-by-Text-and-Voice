@@ -1,0 +1,480 @@
+2025-03-05 10:45:06,210 - tensorflow - DEBUG - Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+2025-03-05 10:45:06,540 - h5py._conv - DEBUG - Creating converter from 7 to 5
+2025-03-05 10:45:06,540 - h5py._conv - DEBUG - Creating converter from 5 to 7
+2025-03-05 10:45:06,541 - h5py._conv - DEBUG - Creating converter from 7 to 5
+2025-03-05 10:45:06,541 - h5py._conv - DEBUG - Creating converter from 5 to 7
+2025-03-05 10:45:07,946 - matplotlib - DEBUG - matplotlib data path: C:\Users\Varma Choudam\AppData\Local\Programs\Python\Python39\lib\site-packages\matplotlib\mpl-data
+2025-03-05 10:45:07,952 - matplotlib - DEBUG - CONFIGDIR=C:\Users\Varma Choudam\.matplotlib
+2025-03-05 10:45:07,968 - matplotlib - DEBUG - interactive is False
+2025-03-05 10:45:07,968 - matplotlib - DEBUG - platform is win32
+2025-03-05 10:45:08,041 - matplotlib - DEBUG - CACHEDIR=C:\Users\Varma Choudam\.matplotlib
+2025-03-05 10:45:08,044 - matplotlib.font_manager - DEBUG - Using fontManager instance from C:\Users\Varma Choudam\.matplotlib\fontlist-v390.json
+2025-03-05 10:45:11,566 - __main__ - INFO - Speech Recognition Version: 3.14.1
+2025-03-05 10:46:53,337 - __main__ - INFO - Speech_recognition Version: 3.14.1
+2025-03-05 10:46:53,340 - __main__ - INFO - Pyttsx3 Version: Unable to detect version
+2025-03-05 10:46:53,977 - __main__ - INFO - Google.generativeai Version: 0.8.4
+2025-03-05 10:46:56,140 - __main__ - INFO - Transformers Version: 4.49.0
+2025-03-05 10:46:57,487 - __main__ - INFO - Nltk Version: 3.9.1
+2025-03-05 10:46:58,761 - tensorflow - DEBUG - Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+2025-03-05 10:46:59,121 - h5py._conv - DEBUG - Creating converter from 7 to 5
+2025-03-05 10:46:59,121 - h5py._conv - DEBUG - Creating converter from 5 to 7
+2025-03-05 10:46:59,121 - h5py._conv - DEBUG - Creating converter from 7 to 5
+2025-03-05 10:46:59,122 - h5py._conv - DEBUG - Creating converter from 5 to 7
+2025-03-05 10:47:00,015 - matplotlib - DEBUG - matplotlib data path: C:\Users\Varma Choudam\AppData\Local\Programs\Python\Python39\lib\site-packages\matplotlib\mpl-data
+2025-03-05 10:47:00,025 - matplotlib - DEBUG - CONFIGDIR=C:\Users\Varma Choudam\.matplotlib
+2025-03-05 10:47:00,027 - matplotlib - DEBUG - interactive is False
+2025-03-05 10:47:00,027 - matplotlib - DEBUG - platform is win32
+2025-03-05 10:47:00,100 - matplotlib - DEBUG - CACHEDIR=C:\Users\Varma Choudam\.matplotlib
+2025-03-05 10:47:00,102 - matplotlib.font_manager - DEBUG - Using fontManager instance from C:\Users\Varma Choudam\.matplotlib\fontlist-v390.json
+2025-03-05 10:47:03,162 - __main__ - WARNING - Config file not found. Using environment variable.
+2025-03-05 10:47:03,162 - __main__ - ERROR - Chatbot initialization failed: No Gemini API key found in environment or config
+2025-03-05 10:47:03,163 - __main__ - ERROR - Traceback (most recent call last):
+  File "c:\Users\Varma Choudam\OneDrive\Desktop\Emotion Aware - Chatbot\app.py", line 89, in __init__
+    with open(config_path, 'r') as config_file:
+FileNotFoundError: [Errno 2] No such file or directory: 'config.json'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\Varma Choudam\OneDrive\Desktop\Emotion Aware - Chatbot\app.py", line 223, in <module>
+    chatbot = EmotionAwareGeminiChatbot()
+  File "c:\Users\Varma Choudam\OneDrive\Desktop\Emotion Aware - Chatbot\app.py", line 102, in __init__
+    raise ValueError("No Gemini API key found in environment or config")
+ValueError: No Gemini API key found in environment or config
+
+2025-03-05 10:47:03,204 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.10.76.226:5000
+2025-03-05 10:47:03,205 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-05 10:47:03,207 - werkzeug - INFO -  * Restarting with stat
+2025-03-05 10:47:03,493 - __main__ - INFO - Speech_recognition Version: 3.14.1
+2025-03-05 10:47:03,496 - __main__ - INFO - Pyttsx3 Version: Unable to detect version
+2025-03-05 10:47:04,176 - __main__ - INFO - Google.generativeai Version: 0.8.4
+2025-03-05 10:47:06,604 - __main__ - INFO - Transformers Version: 4.49.0
+2025-03-05 10:47:08,111 - __main__ - INFO - Nltk Version: 3.9.1
+2025-03-05 10:47:09,414 - tensorflow - DEBUG - Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+2025-03-05 10:47:09,775 - h5py._conv - DEBUG - Creating converter from 7 to 5
+2025-03-05 10:47:09,775 - h5py._conv - DEBUG - Creating converter from 5 to 7
+2025-03-05 10:47:09,776 - h5py._conv - DEBUG - Creating converter from 7 to 5
+2025-03-05 10:47:09,776 - h5py._conv - DEBUG - Creating converter from 5 to 7
+2025-03-05 10:47:10,646 - matplotlib - DEBUG - matplotlib data path: C:\Users\Varma Choudam\AppData\Local\Programs\Python\Python39\lib\site-packages\matplotlib\mpl-data
+2025-03-05 10:47:10,651 - matplotlib - DEBUG - CONFIGDIR=C:\Users\Varma Choudam\.matplotlib
+2025-03-05 10:47:10,654 - matplotlib - DEBUG - interactive is False
+2025-03-05 10:47:10,654 - matplotlib - DEBUG - platform is win32
+2025-03-05 10:47:10,729 - matplotlib - DEBUG - CACHEDIR=C:\Users\Varma Choudam\.matplotlib
+2025-03-05 10:47:10,731 - matplotlib.font_manager - DEBUG - Using fontManager instance from C:\Users\Varma Choudam\.matplotlib\fontlist-v390.json
+2025-03-05 10:47:14,262 - __main__ - WARNING - Config file not found. Using environment variable.
+2025-03-05 10:47:14,264 - __main__ - ERROR - Chatbot initialization failed: No Gemini API key found in environment or config
+2025-03-05 10:47:14,266 - __main__ - ERROR - Traceback (most recent call last):
+  File "c:\Users\Varma Choudam\OneDrive\Desktop\Emotion Aware - Chatbot\app.py", line 89, in __init__
+    with open(config_path, 'r') as config_file:
+FileNotFoundError: [Errno 2] No such file or directory: 'config.json'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\Varma Choudam\OneDrive\Desktop\Emotion Aware - Chatbot\app.py", line 223, in <module>
+    chatbot = EmotionAwareGeminiChatbot()
+  File "c:\Users\Varma Choudam\OneDrive\Desktop\Emotion Aware - Chatbot\app.py", line 102, in __init__
+    raise ValueError("No Gemini API key found in environment or config")
+ValueError: No Gemini API key found in environment or config
+
+2025-03-05 10:47:14,294 - werkzeug - WARNING -  * Debugger is active!
+2025-03-05 10:47:14,301 - werkzeug - INFO -  * Debugger PIN: 503-126-300
+2025-03-05 10:47:14,328 - __main__ - INFO - Rendering index page
+2025-03-05 10:47:14,338 - werkzeug - INFO - 10.10.76.226 - - [05/Mar/2025 10:47:14] "GET / HTTP/1.1" 200 -
+2025-03-05 10:47:16,127 - __main__ - ERROR - 404 Error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2025-03-05 10:47:16,127 - werkzeug - INFO - 10.10.76.226 - - [05/Mar/2025 10:47:16] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-03-05 10:48:18,199 - __main__ - INFO - Rendering index page
+2025-03-05 10:48:18,216 - werkzeug - INFO - 10.10.76.226 - - [05/Mar/2025 10:48:18] "GET / HTTP/1.1" 200 -
+2025-03-05 10:48:45,248 - __main__ - INFO - Speech_recognition Version: 3.14.1
+2025-03-05 10:48:45,251 - __main__ - INFO - Pyttsx3 Version: Unable to detect version
+2025-03-05 10:48:45,886 - __main__ - INFO - Google.generativeai Version: 0.8.4
+2025-03-05 10:48:48,050 - __main__ - INFO - Transformers Version: 4.49.0
+2025-03-05 10:48:49,460 - __main__ - INFO - Nltk Version: 3.9.1
+2025-03-05 10:48:50,773 - tensorflow - DEBUG - Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+2025-03-05 10:48:51,130 - h5py._conv - DEBUG - Creating converter from 7 to 5
+2025-03-05 10:48:51,130 - h5py._conv - DEBUG - Creating converter from 5 to 7
+2025-03-05 10:48:51,131 - h5py._conv - DEBUG - Creating converter from 7 to 5
+2025-03-05 10:48:51,131 - h5py._conv - DEBUG - Creating converter from 5 to 7
+2025-03-05 10:48:51,996 - matplotlib - DEBUG - matplotlib data path: C:\Users\Varma Choudam\AppData\Local\Programs\Python\Python39\lib\site-packages\matplotlib\mpl-data
+2025-03-05 10:48:52,005 - matplotlib - DEBUG - CONFIGDIR=C:\Users\Varma Choudam\.matplotlib
+2025-03-05 10:48:52,008 - matplotlib - DEBUG - interactive is False
+2025-03-05 10:48:52,008 - matplotlib - DEBUG - platform is win32
+2025-03-05 10:48:52,076 - matplotlib - DEBUG - CACHEDIR=C:\Users\Varma Choudam\.matplotlib
+2025-03-05 10:48:52,078 - matplotlib.font_manager - DEBUG - Using fontManager instance from C:\Users\Varma Choudam\.matplotlib\fontlist-v390.json
+2025-03-05 10:48:55,195 - __main__ - WARNING - Config file not found. Using environment variable.
+2025-03-05 10:48:55,196 - __main__ - ERROR - Chatbot initialization failed: No Gemini API key found in environment or config
+2025-03-05 10:48:55,196 - __main__ - ERROR - Traceback (most recent call last):
+  File "c:\Users\Varma Choudam\OneDrive\Desktop\Emotion Aware - Chatbot\app.py", line 89, in __init__
+    with open(config_path, 'r') as config_file:
+FileNotFoundError: [Errno 2] No such file or directory: 'config.json'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\Varma Choudam\OneDrive\Desktop\Emotion Aware - Chatbot\app.py", line 223, in <module>
+    chatbot = EmotionAwareGeminiChatbot()
+  File "c:\Users\Varma Choudam\OneDrive\Desktop\Emotion Aware - Chatbot\app.py", line 102, in __init__
+    raise ValueError("No Gemini API key found in environment or config")
+ValueError: No Gemini API key found in environment or config
+
+2025-03-05 10:48:55,226 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.10.76.226:5000
+2025-03-05 10:48:55,226 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-05 10:48:55,228 - werkzeug - INFO -  * Restarting with stat
+2025-03-05 10:48:55,578 - __main__ - INFO - Speech_recognition Version: 3.14.1
+2025-03-05 10:48:55,580 - __main__ - INFO - Pyttsx3 Version: Unable to detect version
+2025-03-05 10:48:56,257 - __main__ - INFO - Google.generativeai Version: 0.8.4
+2025-03-05 10:48:58,633 - __main__ - INFO - Transformers Version: 4.49.0
+2025-03-05 10:49:00,180 - __main__ - INFO - Nltk Version: 3.9.1
+2025-03-05 10:49:01,442 - tensorflow - DEBUG - Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+2025-03-05 10:49:01,793 - h5py._conv - DEBUG - Creating converter from 7 to 5
+2025-03-05 10:49:01,793 - h5py._conv - DEBUG - Creating converter from 5 to 7
+2025-03-05 10:49:01,794 - h5py._conv - DEBUG - Creating converter from 7 to 5
+2025-03-05 10:49:01,794 - h5py._conv - DEBUG - Creating converter from 5 to 7
+2025-03-05 10:49:02,856 - matplotlib - DEBUG - matplotlib data path: C:\Users\Varma Choudam\AppData\Local\Programs\Python\Python39\lib\site-packages\matplotlib\mpl-data
+2025-03-05 10:49:02,862 - matplotlib - DEBUG - CONFIGDIR=C:\Users\Varma Choudam\.matplotlib
+2025-03-05 10:49:02,864 - matplotlib - DEBUG - interactive is False
+2025-03-05 10:49:02,864 - matplotlib - DEBUG - platform is win32
+2025-03-05 10:49:02,940 - matplotlib - DEBUG - CACHEDIR=C:\Users\Varma Choudam\.matplotlib
+2025-03-05 10:49:02,943 - matplotlib.font_manager - DEBUG - Using fontManager instance from C:\Users\Varma Choudam\.matplotlib\fontlist-v390.json
+2025-03-05 10:49:06,594 - __main__ - WARNING - Config file not found. Using environment variable.
+2025-03-05 10:49:06,594 - __main__ - ERROR - Chatbot initialization failed: No Gemini API key found in environment or config
+2025-03-05 10:49:06,594 - __main__ - ERROR - Traceback (most recent call last):
+  File "c:\Users\Varma Choudam\OneDrive\Desktop\Emotion Aware - Chatbot\app.py", line 89, in __init__
+    with open(config_path, 'r') as config_file:
+FileNotFoundError: [Errno 2] No such file or directory: 'config.json'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\Varma Choudam\OneDrive\Desktop\Emotion Aware - Chatbot\app.py", line 223, in <module>
+    chatbot = EmotionAwareGeminiChatbot()
+  File "c:\Users\Varma Choudam\OneDrive\Desktop\Emotion Aware - Chatbot\app.py", line 102, in __init__
+    raise ValueError("No Gemini API key found in environment or config")
+ValueError: No Gemini API key found in environment or config
+
+2025-03-05 10:49:06,624 - werkzeug - WARNING -  * Debugger is active!
+2025-03-05 10:49:06,630 - werkzeug - INFO -  * Debugger PIN: 503-126-300
+2025-03-05 10:49:06,654 - __main__ - INFO - Rendering index page
+2025-03-05 10:49:06,659 - werkzeug - INFO - 10.10.76.226 - - [05/Mar/2025 10:49:06] "GET / HTTP/1.1" 200 -
+2025-03-05 10:52:50,434 - __main__ - INFO - Speech_recognition Version: 3.14.1
+2025-03-05 10:52:50,440 - __main__ - INFO - Pyttsx3 Version: Unable to detect version
+2025-03-05 10:52:51,396 - __main__ - INFO - Google.generativeai Version: 0.8.4
+2025-03-05 10:52:53,782 - __main__ - INFO - Transformers Version: 4.49.0
+2025-03-05 10:52:55,173 - __main__ - INFO - Nltk Version: 3.9.1
+2025-03-05 10:52:56,479 - tensorflow - DEBUG - Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+2025-03-05 10:52:56,839 - h5py._conv - DEBUG - Creating converter from 7 to 5
+2025-03-05 10:52:56,839 - h5py._conv - DEBUG - Creating converter from 5 to 7
+2025-03-05 10:52:56,839 - h5py._conv - DEBUG - Creating converter from 7 to 5
+2025-03-05 10:52:56,840 - h5py._conv - DEBUG - Creating converter from 5 to 7
+2025-03-05 10:52:57,810 - matplotlib - DEBUG - matplotlib data path: C:\Users\Varma Choudam\AppData\Local\Programs\Python\Python39\lib\site-packages\matplotlib\mpl-data
+2025-03-05 10:52:57,815 - matplotlib - DEBUG - CONFIGDIR=C:\Users\Varma Choudam\.matplotlib
+2025-03-05 10:52:57,819 - matplotlib - DEBUG - interactive is False
+2025-03-05 10:52:57,819 - matplotlib - DEBUG - platform is win32
+2025-03-05 10:52:57,888 - matplotlib - DEBUG - CACHEDIR=C:\Users\Varma Choudam\.matplotlib
+2025-03-05 10:52:57,890 - matplotlib.font_manager - DEBUG - Using fontManager instance from C:\Users\Varma Choudam\.matplotlib\fontlist-v390.json
+2025-03-05 10:53:00,836 - __main__ - INFO - Gemini model initialized successfully
+2025-03-05 10:53:02,006 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-03-05 10:53:03,144 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /bhadresh-savani/bert-base-uncased-emotion/resolve/main/config.json HTTP/1.1" 200 0
+2025-03-05 10:53:06,859 - tensorflow - WARNING - From C:\Users\Varma Choudam\AppData\Local\Programs\Python\Python39\lib\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+
+2025-03-05 10:53:07,305 - __main__ - INFO - Emotion analysis pipeline initialized
+2025-03-05 10:53:07,306 - __main__ - INFO - Chatbot initialized successfully
+2025-03-05 10:53:07,335 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.10.76.226:5000
+2025-03-05 10:53:07,337 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-05 10:53:07,340 - werkzeug - INFO -  * Restarting with stat
+2025-03-05 10:53:07,737 - __main__ - INFO - Speech_recognition Version: 3.14.1
+2025-03-05 10:53:07,740 - __main__ - INFO - Pyttsx3 Version: Unable to detect version
+2025-03-05 10:53:08,443 - __main__ - INFO - Google.generativeai Version: 0.8.4
+2025-03-05 10:53:10,857 - __main__ - INFO - Transformers Version: 4.49.0
+2025-03-05 10:53:12,171 - __main__ - INFO - Nltk Version: 3.9.1
+2025-03-05 10:53:13,462 - tensorflow - DEBUG - Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+2025-03-05 10:53:13,858 - h5py._conv - DEBUG - Creating converter from 7 to 5
+2025-03-05 10:53:13,858 - h5py._conv - DEBUG - Creating converter from 5 to 7
+2025-03-05 10:53:13,859 - h5py._conv - DEBUG - Creating converter from 7 to 5
+2025-03-05 10:53:13,859 - h5py._conv - DEBUG - Creating converter from 5 to 7
+2025-03-05 10:53:17,684 - tensorflow - WARNING - From C:\Users\Varma Choudam\AppData\Local\Programs\Python\Python39\lib\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+
+2025-03-05 10:53:21,028 - __main__ - INFO - Gemini model initialized successfully
+2025-03-05 10:53:23,410 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-03-05 10:53:23,827 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /bhadresh-savani/bert-base-uncased-emotion/resolve/main/config.json HTTP/1.1" 200 0
+2025-03-05 10:53:24,097 - __main__ - INFO - Emotion analysis pipeline initialized
+2025-03-05 10:53:24,097 - __main__ - INFO - Chatbot initialized successfully
+2025-03-05 10:53:24,111 - werkzeug - WARNING -  * Debugger is active!
+2025-03-05 10:53:24,114 - werkzeug - INFO -  * Debugger PIN: 503-126-300
+2025-03-05 10:53:24,133 - __main__ - INFO - Rendering index page
+2025-03-05 10:53:24,137 - werkzeug - INFO - 10.10.76.226 - - [05/Mar/2025 10:53:24] "GET / HTTP/1.1" 200 -
+2025-03-05 10:53:43,672 - werkzeug - INFO -  * Detected change in 'c:\\Users\\Varma Choudam\\OneDrive\\Desktop\\Emotion Aware - Chatbot\\app.py', reloading
+2025-03-05 10:53:45,384 - werkzeug - INFO -  * Restarting with stat
+2025-03-05 10:53:45,933 - __main__ - INFO - Speech_recognition Version: 3.14.1
+2025-03-05 10:53:45,939 - __main__ - INFO - Pyttsx3 Version: Unable to detect version
+2025-03-05 10:53:46,917 - __main__ - INFO - Google.generativeai Version: 0.8.4
+2025-03-05 10:53:49,626 - __main__ - INFO - Transformers Version: 4.49.0
+2025-03-05 10:53:51,275 - __main__ - INFO - Nltk Version: 3.9.1
+2025-03-05 10:53:52,742 - tensorflow - DEBUG - Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+2025-03-05 10:53:53,120 - h5py._conv - DEBUG - Creating converter from 7 to 5
+2025-03-05 10:53:53,120 - h5py._conv - DEBUG - Creating converter from 5 to 7
+2025-03-05 10:53:53,121 - h5py._conv - DEBUG - Creating converter from 7 to 5
+2025-03-05 10:53:53,121 - h5py._conv - DEBUG - Creating converter from 5 to 7
+2025-03-05 10:53:57,483 - tensorflow - WARNING - From C:\Users\Varma Choudam\AppData\Local\Programs\Python\Python39\lib\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+
+2025-03-05 10:54:00,783 - __main__ - INFO - Gemini model initialized successfully
+2025-03-05 10:54:06,094 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-03-05 10:54:06,484 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /bhadresh-savani/bert-base-uncased-emotion/resolve/main/config.json HTTP/1.1" 200 0
+2025-03-05 10:54:06,763 - __main__ - INFO - Emotion analysis pipeline initialized
+2025-03-05 10:54:06,764 - __main__ - INFO - Chatbot initialized successfully
+2025-03-05 10:54:06,783 - werkzeug - WARNING -  * Debugger is active!
+2025-03-05 10:54:06,793 - werkzeug - INFO -  * Debugger PIN: 503-126-300
+2025-03-05 10:55:45,733 - __main__ - INFO - Speech_recognition Version: 3.14.1
+2025-03-05 10:55:45,736 - __main__ - INFO - Pyttsx3 Version: Unable to detect version
+2025-03-05 10:55:46,479 - __main__ - INFO - Google.generativeai Version: 0.8.4
+2025-03-05 10:55:48,790 - __main__ - INFO - Transformers Version: 4.49.0
+2025-03-05 10:55:50,082 - __main__ - INFO - Nltk Version: 3.9.1
+2025-03-05 10:55:51,268 - tensorflow - DEBUG - Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+2025-03-05 10:55:51,632 - h5py._conv - DEBUG - Creating converter from 7 to 5
+2025-03-05 10:55:51,634 - h5py._conv - DEBUG - Creating converter from 5 to 7
+2025-03-05 10:55:51,634 - h5py._conv - DEBUG - Creating converter from 7 to 5
+2025-03-05 10:55:51,634 - h5py._conv - DEBUG - Creating converter from 5 to 7
+2025-03-05 10:55:52,529 - matplotlib - DEBUG - matplotlib data path: C:\Users\Varma Choudam\AppData\Local\Programs\Python\Python39\lib\site-packages\matplotlib\mpl-data
+2025-03-05 10:55:52,535 - matplotlib - DEBUG - CONFIGDIR=C:\Users\Varma Choudam\.matplotlib
+2025-03-05 10:55:52,537 - matplotlib - DEBUG - interactive is False
+2025-03-05 10:55:52,538 - matplotlib - DEBUG - platform is win32
+2025-03-05 10:55:52,606 - matplotlib - DEBUG - CACHEDIR=C:\Users\Varma Choudam\.matplotlib
+2025-03-05 10:55:52,609 - matplotlib.font_manager - DEBUG - Using fontManager instance from C:\Users\Varma Choudam\.matplotlib\fontlist-v390.json
+2025-03-05 10:55:55,688 - __main__ - INFO - Gemini model initialized successfully
+2025-03-05 10:55:56,129 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-03-05 10:55:56,975 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /bhadresh-savani/bert-base-uncased-emotion/resolve/main/config.json HTTP/1.1" 200 0
+2025-03-05 10:55:59,898 - tensorflow - WARNING - From C:\Users\Varma Choudam\AppData\Local\Programs\Python\Python39\lib\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+
+2025-03-05 10:56:00,337 - __main__ - INFO - Emotion analysis pipeline initialized
+2025-03-05 10:56:00,338 - __main__ - INFO - Chatbot initialized successfully
+2025-03-05 10:56:00,362 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.10.76.226:5000
+2025-03-05 10:56:00,363 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-05 10:56:00,366 - werkzeug - INFO -  * Restarting with stat
+2025-03-05 10:56:00,658 - __main__ - INFO - Speech_recognition Version: 3.14.1
+2025-03-05 10:56:00,660 - __main__ - INFO - Pyttsx3 Version: Unable to detect version
+2025-03-05 10:56:01,322 - __main__ - INFO - Google.generativeai Version: 0.8.4
+2025-03-05 10:56:03,796 - __main__ - INFO - Transformers Version: 4.49.0
+2025-03-05 10:56:05,202 - __main__ - INFO - Nltk Version: 3.9.1
+2025-03-05 10:56:06,550 - tensorflow - DEBUG - Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+2025-03-05 10:56:06,908 - h5py._conv - DEBUG - Creating converter from 7 to 5
+2025-03-05 10:56:06,910 - h5py._conv - DEBUG - Creating converter from 5 to 7
+2025-03-05 10:56:06,910 - h5py._conv - DEBUG - Creating converter from 7 to 5
+2025-03-05 10:56:06,911 - h5py._conv - DEBUG - Creating converter from 5 to 7
+2025-03-05 10:56:11,457 - tensorflow - WARNING - From C:\Users\Varma Choudam\AppData\Local\Programs\Python\Python39\lib\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+
+2025-03-05 10:56:14,298 - __main__ - INFO - Gemini model initialized successfully
+2025-03-05 10:56:14,676 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-03-05 10:56:15,617 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /bhadresh-savani/bert-base-uncased-emotion/resolve/main/config.json HTTP/1.1" 200 0
+2025-03-05 10:56:15,913 - __main__ - INFO - Emotion analysis pipeline initialized
+2025-03-05 10:56:15,914 - __main__ - INFO - Chatbot initialized successfully
+2025-03-05 10:56:15,928 - werkzeug - WARNING -  * Debugger is active!
+2025-03-05 10:56:15,931 - werkzeug - INFO -  * Debugger PIN: 503-126-300
+2025-03-05 10:56:15,947 - __main__ - INFO - Rendering index page
+2025-03-05 10:56:15,956 - werkzeug - INFO - 10.10.76.226 - - [05/Mar/2025 10:56:15] "GET / HTTP/1.1" 200 -
+2025-03-05 10:57:40,049 - __main__ - INFO - Speech_recognition Version: 3.14.1
+2025-03-05 10:57:40,051 - __main__ - INFO - Pyttsx3 Version: Unable to detect version
+2025-03-05 10:57:40,816 - __main__ - INFO - Google.generativeai Version: 0.8.4
+2025-03-05 10:57:43,259 - __main__ - INFO - Transformers Version: 4.49.0
+2025-03-05 10:57:44,680 - __main__ - INFO - Nltk Version: 3.9.1
+2025-03-05 10:57:46,156 - tensorflow - DEBUG - Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+2025-03-05 10:57:46,615 - h5py._conv - DEBUG - Creating converter from 7 to 5
+2025-03-05 10:57:46,615 - h5py._conv - DEBUG - Creating converter from 5 to 7
+2025-03-05 10:57:46,616 - h5py._conv - DEBUG - Creating converter from 7 to 5
+2025-03-05 10:57:46,616 - h5py._conv - DEBUG - Creating converter from 5 to 7
+2025-03-05 10:57:47,564 - matplotlib - DEBUG - matplotlib data path: C:\Users\Varma Choudam\AppData\Local\Programs\Python\Python39\lib\site-packages\matplotlib\mpl-data
+2025-03-05 10:57:47,571 - matplotlib - DEBUG - CONFIGDIR=C:\Users\Varma Choudam\.matplotlib
+2025-03-05 10:57:47,574 - matplotlib - DEBUG - interactive is False
+2025-03-05 10:57:47,575 - matplotlib - DEBUG - platform is win32
+2025-03-05 10:57:47,649 - matplotlib - DEBUG - CACHEDIR=C:\Users\Varma Choudam\.matplotlib
+2025-03-05 10:57:47,652 - matplotlib.font_manager - DEBUG - Using fontManager instance from C:\Users\Varma Choudam\.matplotlib\fontlist-v390.json
+2025-03-05 10:57:50,535 - __main__ - INFO - Gemini model initialized successfully
+2025-03-05 10:57:54,899 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-03-05 10:57:56,295 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /bhadresh-savani/bert-base-uncased-emotion/resolve/main/config.json HTTP/1.1" 200 0
+2025-03-05 10:57:59,102 - tensorflow - WARNING - From C:\Users\Varma Choudam\AppData\Local\Programs\Python\Python39\lib\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+
+2025-03-05 10:57:59,505 - __main__ - INFO - Emotion analysis pipeline initialized
+2025-03-05 10:57:59,505 - __main__ - INFO - Chatbot initialized successfully
+2025-03-05 10:57:59,524 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.10.76.226:5000
+2025-03-05 10:57:59,524 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-05 10:57:59,525 - werkzeug - INFO -  * Restarting with stat
+2025-03-05 10:57:59,809 - __main__ - INFO - Speech_recognition Version: 3.14.1
+2025-03-05 10:57:59,811 - __main__ - INFO - Pyttsx3 Version: Unable to detect version
+2025-03-05 10:58:00,474 - __main__ - INFO - Google.generativeai Version: 0.8.4
+2025-03-05 10:58:02,878 - __main__ - INFO - Transformers Version: 4.49.0
+2025-03-05 10:58:04,569 - __main__ - INFO - Nltk Version: 3.9.1
+2025-03-05 10:58:06,380 - tensorflow - DEBUG - Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+2025-03-05 10:58:06,830 - h5py._conv - DEBUG - Creating converter from 7 to 5
+2025-03-05 10:58:06,830 - h5py._conv - DEBUG - Creating converter from 5 to 7
+2025-03-05 10:58:06,832 - h5py._conv - DEBUG - Creating converter from 7 to 5
+2025-03-05 10:58:06,832 - h5py._conv - DEBUG - Creating converter from 5 to 7
+2025-03-05 10:58:11,911 - tensorflow - WARNING - From C:\Users\Varma Choudam\AppData\Local\Programs\Python\Python39\lib\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+
+2025-03-05 10:58:14,499 - __main__ - INFO - Gemini model initialized successfully
+2025-03-05 10:58:15,403 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-03-05 10:58:17,939 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /bhadresh-savani/bert-base-uncased-emotion/resolve/main/config.json HTTP/1.1" 200 0
+2025-03-05 10:58:18,230 - __main__ - INFO - Emotion analysis pipeline initialized
+2025-03-05 10:58:18,230 - __main__ - INFO - Chatbot initialized successfully
+2025-03-05 10:58:18,246 - werkzeug - WARNING -  * Debugger is active!
+2025-03-05 10:58:18,248 - werkzeug - INFO -  * Debugger PIN: 503-126-300
+2025-03-05 10:58:18,268 - __main__ - INFO - Rendering index page
+2025-03-05 10:58:18,276 - werkzeug - INFO - 10.10.76.226 - - [05/Mar/2025 10:58:18] "GET / HTTP/1.1" 200 -
+2025-03-05 10:59:11,875 - __main__ - INFO - Speech_recognition Version: 3.14.1
+2025-03-05 10:59:11,877 - __main__ - INFO - Pyttsx3 Version: Unable to detect version
+2025-03-05 10:59:12,519 - __main__ - INFO - Google.generativeai Version: 0.8.4
+2025-03-05 10:59:14,921 - __main__ - INFO - Transformers Version: 4.49.0
+2025-03-05 10:59:16,197 - __main__ - INFO - Nltk Version: 3.9.1
+2025-03-05 10:59:17,346 - tensorflow - DEBUG - Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+2025-03-05 10:59:17,678 - h5py._conv - DEBUG - Creating converter from 7 to 5
+2025-03-05 10:59:17,679 - h5py._conv - DEBUG - Creating converter from 5 to 7
+2025-03-05 10:59:17,679 - h5py._conv - DEBUG - Creating converter from 7 to 5
+2025-03-05 10:59:17,679 - h5py._conv - DEBUG - Creating converter from 5 to 7
+2025-03-05 10:59:18,498 - matplotlib - DEBUG - matplotlib data path: C:\Users\Varma Choudam\AppData\Local\Programs\Python\Python39\lib\site-packages\matplotlib\mpl-data
+2025-03-05 10:59:18,504 - matplotlib - DEBUG - CONFIGDIR=C:\Users\Varma Choudam\.matplotlib
+2025-03-05 10:59:18,507 - matplotlib - DEBUG - interactive is False
+2025-03-05 10:59:18,508 - matplotlib - DEBUG - platform is win32
+2025-03-05 10:59:18,573 - matplotlib - DEBUG - CACHEDIR=C:\Users\Varma Choudam\.matplotlib
+2025-03-05 10:59:18,575 - matplotlib.font_manager - DEBUG - Using fontManager instance from C:\Users\Varma Choudam\.matplotlib\fontlist-v390.json
+2025-03-05 10:59:21,336 - __main__ - INFO - Gemini model initialized successfully
+2025-03-05 10:59:23,065 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-03-05 10:59:23,558 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /bhadresh-savani/bert-base-uncased-emotion/resolve/main/config.json HTTP/1.1" 200 0
+2025-03-05 10:59:26,667 - tensorflow - WARNING - From C:\Users\Varma Choudam\AppData\Local\Programs\Python\Python39\lib\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+
+2025-03-05 10:59:27,084 - __main__ - INFO - Emotion analysis pipeline initialized
+2025-03-05 10:59:27,085 - __main__ - INFO - Chatbot initialized successfully
+2025-03-05 10:59:27,109 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.10.76.226:5000
+2025-03-05 10:59:27,111 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-05 10:59:27,113 - werkzeug - INFO -  * Restarting with stat
+2025-03-05 10:59:27,403 - __main__ - INFO - Speech_recognition Version: 3.14.1
+2025-03-05 10:59:27,406 - __main__ - INFO - Pyttsx3 Version: Unable to detect version
+2025-03-05 10:59:28,106 - __main__ - INFO - Google.generativeai Version: 0.8.4
+2025-03-05 10:59:30,397 - __main__ - INFO - Transformers Version: 4.49.0
+2025-03-05 10:59:32,015 - __main__ - INFO - Nltk Version: 3.9.1
+2025-03-05 10:59:33,602 - tensorflow - DEBUG - Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+2025-03-05 10:59:34,037 - h5py._conv - DEBUG - Creating converter from 7 to 5
+2025-03-05 10:59:34,037 - h5py._conv - DEBUG - Creating converter from 5 to 7
+2025-03-05 10:59:34,038 - h5py._conv - DEBUG - Creating converter from 7 to 5
+2025-03-05 10:59:34,038 - h5py._conv - DEBUG - Creating converter from 5 to 7
+2025-03-05 10:59:38,648 - tensorflow - WARNING - From C:\Users\Varma Choudam\AppData\Local\Programs\Python\Python39\lib\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+
+2025-03-05 10:59:41,211 - __main__ - INFO - Gemini model initialized successfully
+2025-03-05 10:59:42,211 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-03-05 10:59:43,407 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /bhadresh-savani/bert-base-uncased-emotion/resolve/main/config.json HTTP/1.1" 200 0
+2025-03-05 10:59:43,689 - __main__ - INFO - Emotion analysis pipeline initialized
+2025-03-05 10:59:43,690 - __main__ - INFO - Chatbot initialized successfully
+2025-03-05 10:59:43,701 - werkzeug - WARNING -  * Debugger is active!
+2025-03-05 10:59:43,709 - werkzeug - INFO -  * Debugger PIN: 503-126-300
+2025-03-05 10:59:43,729 - __main__ - INFO - Rendering index page
+2025-03-05 10:59:43,734 - werkzeug - INFO - 10.10.76.226 - - [05/Mar/2025 10:59:43] "GET / HTTP/1.1" 200 -
+2025-03-05 11:01:36,261 - werkzeug - INFO -  * Detected change in 'c:\\Users\\Varma Choudam\\OneDrive\\Desktop\\Emotion Aware - Chatbot\\app.py', reloading
+2025-03-05 11:01:37,593 - werkzeug - INFO -  * Restarting with stat
+2025-03-05 11:01:38,858 - __main__ - INFO - Speech_recognition Version: 3.14.1
+2025-03-05 11:01:38,868 - __main__ - INFO - Pyttsx3 Version: Unable to detect version
+2025-03-05 11:01:40,355 - __main__ - INFO - Google.generativeai Version: 0.8.4
+2025-03-05 11:01:43,905 - __main__ - INFO - Transformers Version: 4.49.0
+2025-03-05 11:01:45,890 - __main__ - INFO - Nltk Version: 3.9.1
+2025-03-05 11:01:47,452 - tensorflow - DEBUG - Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+2025-03-05 11:01:47,928 - h5py._conv - DEBUG - Creating converter from 7 to 5
+2025-03-05 11:01:47,928 - h5py._conv - DEBUG - Creating converter from 5 to 7
+2025-03-05 11:01:47,929 - h5py._conv - DEBUG - Creating converter from 7 to 5
+2025-03-05 11:01:47,930 - h5py._conv - DEBUG - Creating converter from 5 to 7
+2025-03-05 11:01:52,131 - tensorflow - WARNING - From C:\Users\Varma Choudam\AppData\Local\Programs\Python\Python39\lib\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+
+2025-03-05 11:01:55,572 - __main__ - INFO - Gemini model initialized successfully
+2025-03-05 11:01:57,260 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-03-05 11:02:00,158 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /bhadresh-savani/bert-base-uncased-emotion/resolve/main/config.json HTTP/1.1" 200 0
+2025-03-05 11:02:00,563 - __main__ - INFO - Emotion analysis pipeline initialized
+2025-03-05 11:02:00,563 - __main__ - INFO - Chatbot initialized successfully
+2025-03-05 11:02:00,579 - werkzeug - WARNING -  * Debugger is active!
+2025-03-05 11:02:00,582 - werkzeug - INFO -  * Debugger PIN: 503-126-300
+2025-03-05 11:02:02,646 - werkzeug - INFO -  * Detected change in 'c:\\Users\\Varma Choudam\\OneDrive\\Desktop\\Emotion Aware - Chatbot\\app.py', reloading
+2025-03-05 11:02:03,625 - werkzeug - INFO -  * Restarting with stat
+2025-03-05 11:02:04,516 - __main__ - INFO - Speech_recognition Version: 3.14.1
+2025-03-05 11:02:04,525 - __main__ - INFO - Pyttsx3 Version: Unable to detect version
+2025-03-05 11:02:05,699 - __main__ - INFO - Google.generativeai Version: 0.8.4
+2025-03-05 11:02:09,467 - __main__ - INFO - Transformers Version: 4.49.0
+2025-03-05 11:02:11,330 - __main__ - INFO - Nltk Version: 3.9.1
+2025-03-05 11:02:12,786 - tensorflow - DEBUG - Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+2025-03-05 11:02:13,291 - h5py._conv - DEBUG - Creating converter from 7 to 5
+2025-03-05 11:02:13,291 - h5py._conv - DEBUG - Creating converter from 5 to 7
+2025-03-05 11:02:13,292 - h5py._conv - DEBUG - Creating converter from 7 to 5
+2025-03-05 11:02:13,292 - h5py._conv - DEBUG - Creating converter from 5 to 7
+2025-03-05 11:02:18,407 - tensorflow - WARNING - From C:\Users\Varma Choudam\AppData\Local\Programs\Python\Python39\lib\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+
+2025-03-05 11:02:21,171 - __main__ - INFO - Gemini model initialized successfully
+2025-03-05 11:02:22,944 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-03-05 11:02:24,282 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /bhadresh-savani/bert-base-uncased-emotion/resolve/main/config.json HTTP/1.1" 200 0
+2025-03-05 11:02:24,531 - __main__ - INFO - Emotion analysis pipeline initialized
+2025-03-05 11:02:24,531 - __main__ - INFO - Chatbot initialized successfully
+2025-03-05 11:02:24,541 - werkzeug - WARNING -  * Debugger is active!
+2025-03-05 11:02:24,544 - werkzeug - INFO -  * Debugger PIN: 503-126-300
+2025-03-05 11:03:21,248 - __main__ - INFO - Speech_recognition Version: 3.14.1
+2025-03-05 11:03:21,251 - __main__ - INFO - Pyttsx3 Version: Unable to detect version
+2025-03-05 11:03:21,867 - __main__ - INFO - Google.generativeai Version: 0.8.4
+2025-03-05 11:03:24,265 - __main__ - INFO - Transformers Version: 4.49.0
+2025-03-05 11:03:25,518 - __main__ - INFO - Nltk Version: 3.9.1
+2025-03-05 11:03:26,673 - tensorflow - DEBUG - Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+2025-03-05 11:03:27,009 - h5py._conv - DEBUG - Creating converter from 7 to 5
+2025-03-05 11:03:27,009 - h5py._conv - DEBUG - Creating converter from 5 to 7
+2025-03-05 11:03:27,009 - h5py._conv - DEBUG - Creating converter from 7 to 5
+2025-03-05 11:03:27,010 - h5py._conv - DEBUG - Creating converter from 5 to 7
+2025-03-05 11:03:27,811 - matplotlib - DEBUG - matplotlib data path: C:\Users\Varma Choudam\AppData\Local\Programs\Python\Python39\lib\site-packages\matplotlib\mpl-data
+2025-03-05 11:03:27,816 - matplotlib - DEBUG - CONFIGDIR=C:\Users\Varma Choudam\.matplotlib
+2025-03-05 11:03:27,819 - matplotlib - DEBUG - interactive is False
+2025-03-05 11:03:27,820 - matplotlib - DEBUG - platform is win32
+2025-03-05 11:03:27,890 - matplotlib - DEBUG - CACHEDIR=C:\Users\Varma Choudam\.matplotlib
+2025-03-05 11:03:27,893 - matplotlib.font_manager - DEBUG - Using fontManager instance from C:\Users\Varma Choudam\.matplotlib\fontlist-v390.json
+2025-03-05 11:03:30,605 - __main__ - INFO - Gemini model initialized successfully
+2025-03-05 11:03:31,433 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-03-05 11:03:31,848 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /bhadresh-savani/bert-base-uncased-emotion/resolve/main/config.json HTTP/1.1" 200 0
+2025-03-05 11:03:34,813 - tensorflow - WARNING - From C:\Users\Varma Choudam\AppData\Local\Programs\Python\Python39\lib\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+
+2025-03-05 11:03:35,223 - __main__ - INFO - Emotion analysis pipeline initialized
+2025-03-05 11:03:35,223 - __main__ - INFO - Chatbot initialized successfully
+2025-03-05 11:03:35,238 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.10.76.226:5000
+2025-03-05 11:03:35,239 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-05 11:03:35,241 - werkzeug - INFO -  * Restarting with stat
+2025-03-05 11:03:35,516 - __main__ - INFO - Speech_recognition Version: 3.14.1
+2025-03-05 11:03:35,517 - __main__ - INFO - Pyttsx3 Version: Unable to detect version
+2025-03-05 11:03:36,120 - __main__ - INFO - Google.generativeai Version: 0.8.4
+2025-03-05 11:03:38,515 - __main__ - INFO - Transformers Version: 4.49.0
+2025-03-05 11:03:39,930 - __main__ - INFO - Nltk Version: 3.9.1
+2025-03-05 11:03:41,204 - tensorflow - DEBUG - Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+2025-03-05 11:03:41,549 - h5py._conv - DEBUG - Creating converter from 7 to 5
+2025-03-05 11:03:41,549 - h5py._conv - DEBUG - Creating converter from 5 to 7
+2025-03-05 11:03:41,549 - h5py._conv - DEBUG - Creating converter from 7 to 5
+2025-03-05 11:03:41,549 - h5py._conv - DEBUG - Creating converter from 5 to 7
+2025-03-05 11:03:45,933 - tensorflow - WARNING - From C:\Users\Varma Choudam\AppData\Local\Programs\Python\Python39\lib\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+
+2025-03-05 11:03:49,041 - __main__ - INFO - Gemini model initialized successfully
+2025-03-05 11:03:50,399 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-03-05 11:03:51,246 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /bhadresh-savani/bert-base-uncased-emotion/resolve/main/config.json HTTP/1.1" 200 0
+2025-03-05 11:03:51,536 - __main__ - INFO - Emotion analysis pipeline initialized
+2025-03-05 11:03:51,536 - __main__ - INFO - Chatbot initialized successfully
+2025-03-05 11:03:51,547 - werkzeug - WARNING -  * Debugger is active!
+2025-03-05 11:03:51,549 - werkzeug - INFO -  * Debugger PIN: 503-126-300
+2025-03-05 11:03:51,567 - werkzeug - INFO - 10.10.76.226 - - [05/Mar/2025 11:03:51] "[33mGET / HTTP/1.1[0m" 404 -
+2025-03-05 11:04:13,517 - werkzeug - INFO - 10.10.76.226 - - [05/Mar/2025 11:04:13] "[33mGET / HTTP/1.1[0m" 404 -
+2025-03-05 11:04:30,954 - werkzeug - INFO - 10.10.76.226 - - [05/Mar/2025 11:04:30] "[33mGET / HTTP/1.1[0m" 404 -
+2025-03-05 11:05:04,323 - werkzeug - INFO -  * Detected change in 'c:\\Users\\Varma Choudam\\OneDrive\\Desktop\\Emotion Aware - Chatbot\\app.py', reloading
+2025-03-05 11:05:05,835 - werkzeug - INFO -  * Restarting with stat
